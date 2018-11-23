@@ -1,4 +1,4 @@
-This is a lightwight, plug'n play ready, Docker wrapping of [dnscrypt-proxy](https://github.com/jedisct1/dnscrypt-proxy) - big thank you for your great work!
+A lightweight, plug'n play ready, Docker wrapping of [dnscrypt-proxy](https://github.com/jedisct1/dnscrypt-proxy) - big thank you for your great work!
 
 # Usage
 ## How to run
@@ -19,3 +19,6 @@ services:
 #    environment:
 #      - VERSION=2.0.18 # optional
 ```
+
+# How to test
+`dig google.de @localhost`

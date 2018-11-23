@@ -2,7 +2,9 @@ version: "3"
 
 services:
   dnscrypt-proxy:
-    image: verim/dnscrypt-proxy:latest
+    image: kystim/dnscrypt-proxy:latest
     container_name: dnscrypt-proxy
     ports:
       - "::1:53:53/udp"
+#    environment:
+#      - VERSION=2.0.18 # optional
