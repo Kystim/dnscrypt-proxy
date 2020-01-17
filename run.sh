@@ -24,7 +24,7 @@ fi
 mkdir -p config
 if [ ! -f ./config/dnscrypt-proxy.toml ]; then
   echo "Downloading default configuration file"
-  wget -qO- "https://raw.githubusercontent.com/jedisct1/dnscrypt-proxy/master/dnscrypt-proxy/example-dnscrypt-proxy.toml" \
+  wget -qO- "https://raw.githubusercontent.com/DNSCrypt/dnscrypt-proxy/$VERSION/dnscrypt-proxy/example-dnscrypt-proxy.toml" \
           | sed "s/^\s*listen_addresses[^$]*$/listen_addresses = \['\[::\]:53'\]/g" > ./config/dnscrypt-proxy.toml
 fi
 
